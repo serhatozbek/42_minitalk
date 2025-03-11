@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sozbek <sozbek@student.42.fr>              +#+  +:+       +#+        */
+/*   By: sozbek <sozbek@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 17:39:51 by sozbek            #+#    #+#             */
-/*   Updated: 2025/02/24 18:42:49 by sozbek           ###   ########.fr       */
+/*   Updated: 2025/03/12 02:49:10 by sozbek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	server_signal(int signal, siginfo_t *info, void *context)
 		a = 0;
 		i = 0;
 	}
-	kill(info->si_pid, SIGUSR1);
+	check = kill(info->si_pid, SIGUSR1);
 	if (check == -1)
 	{
 		ft_putstr("ERROR: Kill error !");
