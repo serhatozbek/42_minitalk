@@ -59,9 +59,11 @@ Bir terminal açın ve derlediğiniz server programını çalıştırın. PID ek
 
 ./server
 Server PID: 2442
-Adım 2: Client ile Mesaj Gönderme
-İkinci bir terminalde, client programını server'ın PID'si ve mesajınız ile çalıştırın.
 ```
+
+**Adım 2: Client ile Mesaj Gönderme**
+
+İkinci bir terminalde, client programını server'ın PID'si ve mesajınız ile çalıştırın.
 
 ```Bash
 
